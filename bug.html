@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent element before it's added to the DOM
+    document.getElementById("myDiv").innerHTML = "Hello, world!"; 
+    //Adding element to the DOM after accessing it
+    document.body.appendChild(document.createElement("div")).id="myDiv";
+  </script>
+</body>
+</html>
